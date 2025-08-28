@@ -17,6 +17,7 @@ const nextConfig = {
     output: 'export',
     basePath: '/done-portfolio',
     trailingSlash: true,
+    distDir: 'out',
   }),
 };
 
