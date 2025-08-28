@@ -10,15 +10,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: true, // required for next export
   },
-
-  ...(isProd && {
-    output: 'export',
-    basePath: '/done-portfolio',
-    trailingSlash: true,
-    distDir: 'out',
-  }),
 };
 
 export default nextConfig;
