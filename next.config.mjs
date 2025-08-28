@@ -12,6 +12,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // required for next export
   },
+  output: isProd ? 'export' : undefined,
+  
 };
 
 export default nextConfig;
