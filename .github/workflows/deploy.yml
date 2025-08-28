@@ -5,6 +5,11 @@ on:
     branches:
       - main # Or the branch you are working on
 
+permissions:
+  contents: write # This grants write access to the repository
+  pages: write    # (Optional) if you are deploying to a Pages branch
+  id-token: write 
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
