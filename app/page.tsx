@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -84,7 +85,7 @@ export default function Portfolio() {
       position: "Senior Full Stack Developer (Remote worker)",
       period: "2024 - current",
       description: "Developed and maintained complex web applications using Next.js, Node.js, and MongoDB, intergrating with Lao payment gateway.",
-      achievements: ["Leader of DEV team", "Implemented CI/CD pipeline"],
+      achievements: ["Leader of Supplier production DEV team", "Implemented CI/CD pipeline"],
     },
     {
       company: "LAILAOLAB",
@@ -178,10 +179,12 @@ export default function Portfolio() {
             </div>
             <div className="flex justify-center">
               <div className="relative">
-                <img
-                  src="/done-profile.jpg"
-                  alt="done profile"
-                  className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
+                <Image
+                    src="/done-profile.jpg"
+                    alt="done profile"
+                    width={500} // You must provide width and height
+                    height={500} // This prevents layout shift
+                    className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-secondary/20 rounded-2xl -z-10 blur-xl"></div>
               </div>
@@ -389,7 +392,7 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-foreground mb-8">Let's in Touch</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-8">Get in Touch</h2>
           <p className="text-xl text-muted-foreground mb-12 text-pretty">
             Have a project in mind? I'd love to hear about it and discuss how we can bring your ideas to life.
           </p>
