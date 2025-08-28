@@ -13,7 +13,9 @@ const nextConfig = {
     unoptimized: true, // required for next export
   },
   output: isProd ? 'export' : undefined,
-  
+  trailingSlash: true,
+  basePath: isProd ? '/done-portfolio' : '',
+
 };
 
 export default nextConfig;
