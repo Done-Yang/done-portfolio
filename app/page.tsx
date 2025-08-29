@@ -180,8 +180,8 @@ export default function Portfolio() {
             <div className="flex justify-center">
               <div className="relative">
                 <Image
-                    // src="https://drive.google.com/file/d/1KbzTyOh5Ph_j-gkp5KtwcgTgEGA377B4/view"
-                    src="/done-profile.jpg"
+                    src="https://pub-fe8adea94e294daf99be513d95a9cbd0.r2.dev/done-profile.jpg"
+                    // src="/done-profile.jpg"
                     alt="done profile"
                     width={500} // You must provide width and height
                     height={500} // This prevents layout shift
