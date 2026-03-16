@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Images } from "../public"
 
 export default function Portfolio() {
   const [isVisible, setIsVisible] = useState(false)
@@ -18,19 +19,19 @@ export default function Portfolio() {
       title: "Market Fresh Food Platform",
       description: "Full-stack web application for online food ordering, PhaJay (laos payment gateway) integration",
       technologies: ["MVC Design Pattern", "Client-Server System Model", "Next.js","Tailwind CSS", "Node.js", "MongoDB", "Docker", "Rest API", "Logging", "Caching", "..."],
-      image: "/supplier.png",
+      image: Images.Supplier,
     },
     {
       title: "Aoser Dashboard & Backend",
       description: "Dev-Ops for admin dashboard & Application's Backend, Lao bank integration, maintenance",
       technologies: ["Monolithic Architecture", "Client-Server System Model", "TypeScript", "Node.js", "Joi", "mongoose", "MongoDB", "Next.js","Tailwind", "Rest API", "pm2","..."],
-      image: "/aoser.png",
+      image: Images.Aoser,
     },
     {
       title: "Carlsberg Promotion Lucky Draw",
       description: "Backend development for a carlsberg promotion lucky draw, integration with Chat GPT api and Cloud vision api",
       technologies: ["Node.js", "Express.js", "MongoDB", "Image detection logic", "Logging", "..."],
-      image: "/carberg.png",
+      image: Images.Carberg,
     },
   ]
 
@@ -181,7 +182,7 @@ export default function Portfolio() {
               <div className="relative">
                 <Image
                     // src="https://pub-fe8adea94e294daf99be513d95a9cbd0.r2.dev/done-profile.jpg"
-                    src="/profile.png"
+                    src={Images.Profile}
                     alt="done profile"
                     width={350}
                     height={500}
